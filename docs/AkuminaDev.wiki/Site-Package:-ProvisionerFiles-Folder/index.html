@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>AkuminaDev.wiki/Site-Package:-ProvisionerFiles-Folder · Akumina Developer Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;Within the ProvisionerFiles folder we will store our provisioning javascript. Having a provisioning javascript file is required for the deployment view to function.&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="AkuminaDev.wiki/Site-Package:-ProvisionerFiles-Folder · Akumina Developer Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://akumina.github.io/"/><meta property="og:description" content="&lt;p&gt;Within the ProvisionerFiles folder we will store our provisioning javascript. Having a provisioning javascript file is required for the deployment view to function.&lt;/p&gt;
+"/><meta property="og:image" content="https://akumina.github.io/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://akumina.github.io/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://akumina.github.io/blog/atom.xml" title="Akumina Developer Documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://akumina.github.io/blog/feed.xml" title="Akumina Developer Documentation Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/ak-logo2.png" alt="Akumina Developer Documentation"/><h2 class="headerTitleWithLogo">Akumina Developer Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/ak-frame45" target="_self">Docs</a></li><li class=""><a href="/docs/api" target="_self">API</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">AkuminaDev.wiki/Site-Package:-ProvisionerFiles-Folder</h1></header><article><div><span><p>Within the ProvisionerFiles folder we will store our provisioning javascript. Having a provisioning javascript file is required for the deployment view to function.
+<img src="https://akumina.azureedge.net/wiki/training/images/site_creator/image8.png" alt="image 8"></p>
+<p>The base provisioning javascript is shown below. This file can be modified to enhance the UI functionality of the deployment view</p>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">var</span> SiteCreator = SiteCreator ? SiteCreator : {};
+
+<span class="hljs-keyword">if</span> ((<span class="hljs-keyword">typeof</span> SiteCreator.SampleSite) === <span class="hljs-string">'undefined'</span>) {
+    SiteCreator.SampleSite = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> _cur = <span class="hljs-keyword">this</span>;
+
+        <span class="hljs-keyword">this</span>.Init = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">model</span>) </span>{
+            SiteCreator.Eventing.Subscribe(<span class="hljs-string">'/SiteCreator/DeployButtonclick/'</span>, _cur.OnDeploymentClick);
+            SiteCreator.Eventing.Subscribe(<span class="hljs-string">'/SiteCreator/SelectActionChange/'</span>, _cur.SelectActionChange);
+            SiteCreator.Eventing.Subscribe(<span class="hljs-string">'/SiteCreator/SiteChange/'</span>, _cur.OnSiteChange);
+            SiteCreator.Eventing.Subscribe(<span class="hljs-string">'/SiteCreator/GetFeatureName/'</span>, _cur.GetFeatureName);
+            _cur.className = model.className;
+            _cur.siteContainerId = model.siteContainerId;
+        };
+
+        <span class="hljs-keyword">this</span>.OnDeploymentClick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">model</span>) </span>{
+            BaseDeployment(model, _cur.siteContainerId);
+        };
+
+        <span class="hljs-keyword">this</span>.SelectActionChange = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">model</span>) </span>{
+            <span class="hljs-keyword">if</span> (model.siteContainerId == _cur.siteContainerId) {
+                <span class="hljs-comment">//Detect Add mode</span>
+                <span class="hljs-keyword">if</span> ($(<span class="hljs-string">'input[type=radio][name=select-an-action][value=CreateNewInstallation]'</span>).is(<span class="hljs-string">':checked'</span>)) {
+                }<span class="hljs-comment">//Detect Update mode</span>
+                <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ($(<span class="hljs-string">'input[type=radio][name=select-an-action][value=UpdateConfigurationSettings]'</span>).is(<span class="hljs-string">':checked'</span>)) {
+                }
+            }
+        };
+
+        <span class="hljs-keyword">this</span>.OnSiteChange = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">model</span>) </span>{
+            <span class="hljs-keyword">if</span> (model.siteContainerId == _cur.siteContainerId) {
+                $(<span class="hljs-string">"#selectActionDiv"</span>).show();
+                $(<span class="hljs-string">"#updateConfigOption"</span>).hide();
+            }
+        };
+
+        <span class="hljs-keyword">this</span>.GetFeatureName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">model</span>) </span>{
+            BaseGetFeatureName(model, _cur.siteContainerId);
+        };
+    }
+};
+</code></pre>
+<p><strong>Note:</strong> You must replace SiteCreator.SampleSite with the ClassName property you defined in your C# class that inherits the SiteProvisionerSiteBase class. Otherwise you will get errors.</p>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/ak-logo2.png" alt="Akumina Developer Documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/ak-frame45.html">Akumina Framework 4.5</a><a href="/docs/en/ak-widget-builder.html">Akumina Widget Builder</a><a href="/docs/en/doc3.html">Typescript API Reference</a></div><div><h5>Community</h5></div><div><h5>More</h5><a href="https://github.com/akumina/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/AkuminaDev/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 Akumina</section></footer></div></body></html>

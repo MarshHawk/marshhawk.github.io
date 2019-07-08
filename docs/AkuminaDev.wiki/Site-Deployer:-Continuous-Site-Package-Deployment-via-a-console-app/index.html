@@ -1,0 +1,83 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>AkuminaDev.wiki/Site-Deployer:-Continuous-Site-Package-Deployment-via-a-console-app · Akumina Developer Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;p&gt;&lt;img src=&quot;https://akuminadownloads.blob.core.windows.net/wiki/SitePackages/SiteDeployer-ConsoleApp.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="AkuminaDev.wiki/Site-Deployer:-Continuous-Site-Package-Deployment-via-a-console-app · Akumina Developer Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://akumina.github.io/"/><meta property="og:description" content="&lt;p&gt;&lt;img src=&quot;https://akuminadownloads.blob.core.windows.net/wiki/SitePackages/SiteDeployer-ConsoleApp.png&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+"/><meta property="og:image" content="https://akumina.github.io/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://akumina.github.io/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://akumina.github.io/blog/atom.xml" title="Akumina Developer Documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://akumina.github.io/blog/feed.xml" title="Akumina Developer Documentation Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/ak-logo2.png" alt="Akumina Developer Documentation"/><h2 class="headerTitleWithLogo">Akumina Developer Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/ak-frame45" target="_self">Docs</a></li><li class=""><a href="/docs/api" target="_self">API</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">AkuminaDev.wiki/Site-Deployer:-Continuous-Site-Package-Deployment-via-a-console-app</h1></header><article><div><span><p><img src="https://akuminadownloads.blob.core.windows.net/wiki/SitePackages/SiteDeployer-ConsoleApp.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="applies-to"></a><a href="#applies-to" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Applies to:</h2>
+<p>Akumina 4.0.0.0 and later</p>
+<blockquote>
+<p>Before proceeding, please review the <a href="https://github.com/akumina/AkuminaTraining/wiki/Site-Package-Overview">Site Package Overview</a>.</p>
+</blockquote>
+<h2><a class="anchor" aria-hidden="true" id="download"></a><a href="#download" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Download</h2>
+<p>To obtain the sitedeployer console application, please look at the <em><a href="https://github.com/akumina/AkuminaTraining/tree/master/SampleFrontEndStarterProject">Code</a></em> section of this wiki, at SampleFrontEndStarterProject/tools/Akumina.SiteDeployer.exe</p>
+<blockquote>
+<p>You will need to download the entirety of the SampleFrontEndStarterProject.</p>
+</blockquote>
+<p>Package examples can be found at <a href="https://github.com/akumina/AkuminaTraining/tree/master/SiteProvisioning.SampleSite/SiteProvisioning.SampleSite/SiteDefinitions">https://github.com/akumina/AkuminaTraining/tree/master/SiteProvisioning.SampleSite/SiteProvisioning.SampleSite/SiteDefinitions</a></p>
+<h2><a class="anchor" aria-hidden="true" id="overview"></a><a href="#overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h2>
+<p>An Akumina site is deployed via a site package; it is fundamentally a &quot;package&quot; of instructions, files, pages and other artifacts that determines what gets deployed into a site and/or site collection. This <strong>same</strong> site package can be deployed either:</p>
+<ul>
+<li>By a business user inside AppManager, using the Site Creator/Deployment Manager app.</li>
+<li>By a developer using a console application - The console app uses the site collection credentials and your Site package name and will deploy the assets just like the Site Creator does, but from an automated command line.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="integration-into-build-process"></a><a href="#integration-into-build-process" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Integration into build process</h2>
+<p>The console application allows continuous and unattended Akumina deployments; when integrated into a development process, a team of developers can collaborate on changes that are deployed into an Akumina site. In the example below:</p>
+<ul>
+<li>Developers check in code to source control (TFS).</li>
+<li>A continuous integration process extracts out the artifacts from source control and it is placed in a build drop.</li>
+<li>From there, a continuous delivery process takes the package from the build drop and deploys it to the QA and/or PROD environments.</li>
+</ul>
+<p><img src="https://akuminadownloads.blob.core.windows.net/wiki/SitePackages/SiteDeployer-BuildProcess.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="comparison-with-using-the-deployment-manager-site-creator-app"></a><a href="#comparison-with-using-the-deployment-manager-site-creator-app" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Comparison with using the Deployment Manager/Site Creator app</h2>
+<p>An Akumina site package is generally deployed via the Deployment Manager/Site Creator app inside AppManager. There are a number of considerations to this - it requires a user to login to the app manager, navigated screens, click to take actions and have the browser open while deployment occurs. The console app  offers a better and faster way to deploy site packages, and one that can be integrated with existing build tools and processes.</p>
+<h2><a class="anchor" aria-hidden="true" id="usage"></a><a href="#usage" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Usage</h2>
+<p>The site deployer accepts several command line parameters:</p>
+<table>
+<thead>
+<tr><th>Property</th><th>Description</th></tr>
+</thead>
+<tbody>
+<tr><td>options</td><td>The artifacts to deploy from the package.</td></tr>
+<tr><td>envdir</td><td>The path to the package directory. See the SampleFrontEndStarterProject in the code link below.</td></tr>
+<tr><td>assetdirectory</td><td>The name of the package to be deployed; this corresponds to the folder name of the site package off the envdir.</td></tr>
+<tr><td>spurl</td><td>The URL of the site that the package will be executed against.</td></tr>
+<tr><td>spuser</td><td>The user to execute the package.</td></tr>
+<tr><td>sppassword</td><td>The password of the user to execute the package.</td></tr>
+</tbody>
+</table>
+<p>To run the tool, you will use the following command (from a command prompt or batch file, assumes the exe is in a directory named tools and you are in the parent directory to that). The example below deploys the master page and the js files to the specified site collection:</p>
+<pre><code class="hljs">tools\Akumina.SiteDeployer.exe options masterpage,js envdir C:\source\Site\ assetdirectory packageFolderName spdirectory DigitalWorkplace spurl https://tenant.sharepoint.com/sites/sharepointsitecollection spuser user@tenant.onmicrosoft.com sppassword userpassword
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="options"></a><a href="#options" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Options</h2>
+<blockquote>
+<p>See the <a href="https://github.com/akumina/AkuminaTraining/blob/master/SampleFrontEndStarterProject/tools/deploy.js">deploy.js</a> file in SampleFrontEndStarterProject</p>
+</blockquote>
+<p>The following options are available for deployment:</p>
+<ul>
+<li>masterpage</li>
+<li>js</li>
+<li>css</li>
+<li>lists</li>
+<li>layouts</li>
+<li>pages</li>
+<li>controls - updates page content per the <em>assetdirectory</em>/PageContent directory</li>
+<li>widgets - deploys widget pacakages in the <em>assetdirectory</em>/WidgetPackages directory</li>
+<li>contentfiles</li>
+<li>imagefiles - uploads images in the <em>assetdirectory</em>/branding/images directory</li>
+<li>updatelists</li>
+<li>homepage</li>
+<li>fonts - uploads fonts in the <em>assetdirectory</em>/branding/fonts directory</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="example"></a><a href="#example" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example:</h2>
+<p>In this example, we have a basic site package that only deploys a single list:
+<img src="https://akuminadownloads.blob.core.windows.net/wiki/SitePackages/SiteDeployer-packageFolderName.png" alt=""></p>
+<p>The SiteDeployer console app executes the step:
+<img src="https://akuminadownloads.blob.core.windows.net/wiki/SitePackages/SiteDeployer-ConsoleStep.png" alt=""></p>
+<p>The resulting output inside the site - a deployed list as well as content:
+<img src="https://akuminadownloads.blob.core.windows.net/wiki/SitePackages/SiteDeployer-NewList.png" alt=""></p>
+<h2><a class="anchor" aria-hidden="true" id="other-use-cases"></a><a href="#other-use-cases" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Other use cases:</h2>
+<p>The following list are use cases where the site deployer tool will provide benefit for a single developer or entire development team:</p>
+<ul>
+<li>Deploying a single widget instance or a single list, or a set of files - packages can be as atomic as you wish.</li>
+<li>A distributed team of Akumina Developers - Using a continuous integration server such as CruiseControl.NET to deploy changes on demand.</li>
+<li>A project needing a development and staging environment - changes can be trialed in the development environment, then deployed using the tool to the production environment.</li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#applies-to">Applies to:</a></li><li><a href="#download">Download</a></li><li><a href="#overview">Overview</a></li><li><a href="#integration-into-build-process">Integration into build process</a></li><li><a href="#comparison-with-using-the-deployment-manager-site-creator-app">Comparison with using the Deployment Manager/Site Creator app</a></li><li><a href="#usage">Usage</a></li><li><a href="#options">Options</a></li><li><a href="#example">Example:</a></li><li><a href="#other-use-cases">Other use cases:</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/ak-logo2.png" alt="Akumina Developer Documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/ak-frame45.html">Akumina Framework 4.5</a><a href="/docs/en/ak-widget-builder.html">Akumina Widget Builder</a><a href="/docs/en/doc3.html">Typescript API Reference</a></div><div><h5>Community</h5></div><div><h5>More</h5><a href="https://github.com/akumina/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/AkuminaDev/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 Akumina</section></footer></div></body></html>

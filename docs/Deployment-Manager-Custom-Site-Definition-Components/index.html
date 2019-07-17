@@ -1,0 +1,322 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Deployment Manager Custom Site Definition Components · Akumina Developer Documentation</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;custom-site-definition-components&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#custom-site-definition-components&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Custom Site Definition Components&lt;/h1&gt;
+"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Deployment Manager Custom Site Definition Components · Akumina Developer Documentation"/><meta property="og:type" content="website"/><meta property="og:url" content="https://akumina.github.io/"/><meta property="og:description" content="&lt;h1&gt;&lt;a class=&quot;anchor&quot; aria-hidden=&quot;true&quot; id=&quot;custom-site-definition-components&quot;&gt;&lt;/a&gt;&lt;a href=&quot;#custom-site-definition-components&quot; aria-hidden=&quot;true&quot; class=&quot;hash-link&quot;&gt;&lt;svg class=&quot;hash-link-icon&quot; aria-hidden=&quot;true&quot; height=&quot;16&quot; version=&quot;1.1&quot; viewBox=&quot;0 0 16 16&quot; width=&quot;16&quot;&gt;&lt;path fill-rule=&quot;evenodd&quot; d=&quot;M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z&quot;&gt;&lt;/path&gt;&lt;/svg&gt;&lt;/a&gt;Custom Site Definition Components&lt;/h1&gt;
+"/><meta property="og:image" content="https://akumina.github.io/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://akumina.github.io/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><link rel="alternate" type="application/atom+xml" href="https://akumina.github.io/blog/atom.xml" title="Akumina Developer Documentation Blog ATOM Feed"/><link rel="alternate" type="application/rss+xml" href="https://akumina.github.io/blog/feed.xml" title="Akumina Developer Documentation Blog RSS Feed"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/js/scrollSpy.js"></script><link rel="stylesheet" href="/css/main.css"/><script src="/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/"><img class="logo" src="/img/ak-logo2.png" alt="Akumina Developer Documentation"/><h2 class="headerTitleWithLogo">Akumina Developer Documentation</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"><li class=""><a href="/docs/Site-Package-Overview" target="_self">Docs</a></li><li class=""><a href="/docs/api" target="_self">API</a></li><li class=""><a href="/blog/" target="_self">Blog</a></li></ul></nav></div></header></div></div><div class="navPusher"><div class="docMainWrapper wrapper"><div class="container mainContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 class="postHeaderTitle">Deployment Manager Custom Site Definition Components</h1></header><article><div><span><h1><a class="anchor" aria-hidden="true" id="custom-site-definition-components"></a><a href="#custom-site-definition-components" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Custom Site Definition Components</h1>
+<p>A Custom Site Definition will be contained within a C# project</p>
+<p><img src="https://akumina.azureedge.net/wiki/training/images/site_creator/image5.png" alt="image 5"></p>
+<p>There are three elements within the project that are needed for your custom site definition to work with the Deployment app</p>
+<ul>
+<li>A C# class that inherits SiteProvisionerSiteBase</li>
+<li>C# classes that inherit the ISiteProvisionerStep interface (our steps)</li>
+<li>A SiteDefinitions folder</li>
+</ul>
+<p>We will go into each section in depth.</p>
+<h2><a class="anchor" aria-hidden="true" id="the-c-class-inheriting-the-siteprovisionersitebase-class"></a><a href="#the-c-class-inheriting-the-siteprovisionersitebase-class" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>The C# class inheriting the SiteProvisionerSiteBase class</h2>
+<p>This file inherits the SiteProvisionerSiteBase class and assembles our step classes into a list of steps which is seen in the Deployment App UI. This class is required for the site to show up in the Deployment App dropdown. You may have multiple classes that inherit the SiteProvisionerSiteBase class within a csproj, they will all show up in the Deployment App dropdown. A sample SiteDefinition.cs, called SampleSite.cs, is shown below</p>
+<pre><code class="hljs css language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SampleSite</span> : <span class="hljs-title">SiteProvisionerSiteBase</span>
+{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">string</span> AssetDirectory
+    {
+        <span class="hljs-keyword">get</span>
+        {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"SampleSite"</span>;
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">string</span> Javascript
+    {
+        <span class="hljs-keyword">get</span>
+        {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"~/SiteDefinitions/SampleSite/ProvisionerFiles/js/samplesite.js"</span>;
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">string</span> FriendlyName
+    {
+        <span class="hljs-keyword">get</span>
+        {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"Sample Site"</span>;
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">string</span> ClassName
+    {
+        <span class="hljs-keyword">get</span>
+        {
+            <span class="hljs-keyword">return</span> <span class="hljs-string">"SiteCreator.SampleSite"</span>;
+        }
+    }
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> List&lt;ISiteProvisionerStep&gt; Steps
+    {
+        <span class="hljs-keyword">get</span> 
+        {
+            <span class="hljs-keyword">var</span> _steps = <span class="hljs-keyword">new</span> List&lt;ISiteProvisionerStep&gt;();
+
+            <span class="hljs-comment">// Ensure AssetDirectory Exists</span>
+            _steps.Add(<span class="hljs-keyword">new</span> EnsureAssetDirectoryExists()); 
+            <span class="hljs-comment">// Ensure site is a Publishing Site               </span>
+            _steps.Add(<span class="hljs-keyword">new</span> CheckPreReqs());
+
+            <span class="hljs-comment">//Do something with Sample Step</span>
+            _steps.Add(<span class="hljs-keyword">new</span> SampleStep());
+
+            <span class="hljs-keyword">return</span> _steps;
+        }
+     }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> List&lt;SiteProvisionerSettingsField&gt; UserSettings 
+    {
+        <span class="hljs-keyword">get</span>
+        {
+            <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> List&lt;SiteProvisionerSettingsField&gt;();            
+        }
+    }
+}
+</code></pre>
+<p>We’ll cover this file by sections</p>
+<h4><a class="anchor" aria-hidden="true" id="public-override-string-assetdirectory"></a><a href="#public-override-string-assetdirectory" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>public override string AssetDirectory</h4>
+<p>We set the AssetDirectory property here, which is used when some steps access the AssetDirectory inside of the SiteDefinitions folder. In this case, our Asset Directory is named SampleSite. Asset Directories will be discussed in depth <a href="https://github.com/akumina/AkuminaTraining/wiki/Site-Creator:-Custom-Site-Definition-Components#sitedefinitions-folder">here</a>.</p>
+<h4><a class="anchor" aria-hidden="true" id="public-override-string-javascript"></a><a href="#public-override-string-javascript" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>public override string Javascript</h4>
+<p>The Javascript property is used to load the provisioning javascript file into your deployment view. The folder path to the provisioning javascript should be set here. We will go into detail <a href="https://github.com/akumina/AkuminaTraining/wiki/Site-Creator:-Custom-Site-Definition-Components#provisionerfiles">here</a>.</p>
+<h4><a class="anchor" aria-hidden="true" id="public-override-string-friendlyname"></a><a href="#public-override-string-friendlyname" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>public override string FriendlyName</h4>
+<p>This is the name of the site definition that will show up within the drop down menu of the Deployment Manager App view.</p>
+<h4><a class="anchor" aria-hidden="true" id="public-override-string-classname"></a><a href="#public-override-string-classname" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>public override string ClassName</h4>
+<p>This is the class name that the deployment view will refer to your site under. This class name must begin with <strong>SiteCreator</strong> followed by <strong>.UniqueClassName</strong>. The class name here must correspond with the class within your provisioning javascript.</p>
+<h4><a class="anchor" aria-hidden="true" id="public-override-list-isiteprovisionerstep-steps"></a><a href="#public-override-list-isiteprovisionerstep-steps" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>public override List<ISiteProvisionerStep> Steps</h4>
+<p>Here is where we add our steps to the step list (so they show up in Deployment Manager App). Our step list must be of the type List<ISiteProvisionerStep>() and our entries are just instances of our classes that inherit the ISiteProvisionerStep interface. In this case we’re adding the EnsureAssetDirectoryExists step, the CheckPreReqs step, and the Sample step. We will discuss step classes <a href="https://github.com/akumina/AkuminaTraining/wiki/Site-Creator:-Custom-Site-Definition-Components#c-classes-that-inherit-the-isiteprovisioner-step-interface">here</a>.</p>
+<h4><a class="anchor" aria-hidden="true" id="public-override-list-siteprovisionersettingsfield-usersettings"></a><a href="#public-override-list-siteprovisionersettingsfield-usersettings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>public override List<SiteProvisionerSettingsField> UserSettings</h4>
+<p>Here is where we add user inputs to the Deployment App. Our input list must be of the type List<SiteProvisionerSettingsField>() and our entries are instances of the SiteProvisionerSettingsField class. In this case, we have any user inputs so we return an empty List<SiteProvisionerSettingsField>() object. We will discuss adding user input fields <a href="https://github.com/akumina/AkuminaTraining/wiki/Site-Creator:-Sample-Step-Code#sample-step-code--with-user-inputs">here</a>.</p>
+<h3><a class="anchor" aria-hidden="true" id="siteprovisionersitebase"></a><a href="#siteprovisionersitebase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SiteProvisionerSiteBase</h3>
+<p>As we know, our C# class must inherit the SiteProvisionerSiteBase class. Simply put, the SiteProvisionerSiteBase class is an abstract class that fulfills the ISiteProvisionerSite interface and performs some backend work to allow our custom site definition and its steps show up in the Deployment Manager App.</p>
+<pre><code class="hljs css language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SiteProvisionerSiteBase</span> : <span class="hljs-title">ISiteProvisionerSite</span>
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="isiteprovisionersite"></a><a href="#isiteprovisionersite" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ISiteProvisionerSite</h3>
+<p>The SiteProvisionerSiteBase class implements the ISiteProvisionerSite interface, which is shown below</p>
+<pre><code class="hljs css language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">ISiteProvisionerSite</span>
+{
+    SiteProvisionerProperties Properties { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    ApplicationContext Context { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">string</span> AssetDirectory { <span class="hljs-keyword">get</span>; }
+    <span class="hljs-keyword">string</span> FriendlyName { <span class="hljs-keyword">get</span>; }
+    <span class="hljs-keyword">string</span> Javascript { <span class="hljs-keyword">get</span>; } 
+    List&lt;ISiteProvisionerStep&gt; Steps { <span class="hljs-keyword">get</span>; }
+    List&lt;SiteProvisionerSettingsField&gt; UserSettings { <span class="hljs-keyword">get</span>; }
+    <span class="hljs-function">SiteProvisionerResponse <span class="hljs-title">ExecuteSteps</span>(<span class="hljs-params"></span>)</span>;
+    <span class="hljs-function">SiteProvisionerResponse <span class="hljs-title">ExecuteStepByName</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> stepName</span>)</span>;        
+}
+</code></pre>
+<h2><a class="anchor" aria-hidden="true" id="c-classes-that-inherit-the-isiteprovisioner-step-interface"></a><a href="#c-classes-that-inherit-the-isiteprovisioner-step-interface" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>C# classes that inherit the ISiteProvisioner Step interface</h2>
+<h3><a class="anchor" aria-hidden="true" id="overview"></a><a href="#overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h3>
+<p>The Steps folder contains the classes that are executed by the Deployment Manager when we deploy our sites. When we created new steps they will be placed in this folder. Now this raises the question, what makes a regular old C# class a Deployment Manager Step? A step inherits the SiteProvisionStepBase class and implements the ISiteProvisionerStep interface.</p>
+<pre><code class="hljs css language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SampleStep</span> : <span class="hljs-title">SiteProvisionerStepBase</span>, <span class="hljs-title">ISiteProvisionerStep</span>
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="isiteprovisionerstep"></a><a href="#isiteprovisionerstep" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ISiteProvisionerStep</h4>
+<p>The Deployment Manager app is looking for a class to implement the ISiteProvisionerStep interface in order to be considered a step. The interface is shown below</p>
+<pre><code class="hljs css language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title">ISiteProvisionerStep</span>
+{
+    SiteProvisionerProperties Properties { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">string</span> StepName { <span class="hljs-keyword">get</span>; }
+    List&lt;SiteProvisionerSettingsField&gt; UserSettings { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+
+    <span class="hljs-function">SiteProvisionerStepResponse <span class="hljs-title">Execute</span>(<span class="hljs-params"></span>)</span>;
+}
+</code></pre>
+<p>For the Properties property we make use of the SiteProvisionerProperties class to keep track of universal values for the site, which is shown below</p>
+<pre><code class="hljs css language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SiteProvisionerProperties</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SiteProvisionerProperties</span>(<span class="hljs-params"></span>)</span>;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> AssetDirectory { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">public</span> Dictionary&lt;<span class="hljs-keyword">string</span>, <span class="hljs-keyword">object</span>&gt; Values { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+}
+</code></pre>
+<p>The SiteProvisionerSettingsField class to provide a format for defining fields for user input</p>
+<pre><code class="hljs css language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SiteProvisionerSettingsField</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SiteProvisionerSettingsField</span>(<span class="hljs-params"></span>)</span>;
+
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">object</span> DefaultValue { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> Description { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> Name { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> Required { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">public</span> Type Type { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> <span class="hljs-title">Validate</span>(<span class="hljs-params"><span class="hljs-keyword">object</span> val</span>)</span>;
+}
+</code></pre>
+<p>And the SiteProvisionerStepResponse class for the response from each step upon completion or error</p>
+<pre><code class="hljs css language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SiteProvisionerStepResponse</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">SiteProvisionerStepResponse</span>(<span class="hljs-params"></span>)</span>;
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> Halt { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">string</span> Message { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">bool</span> Success { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+}
+</code></pre>
+<h4><a class="anchor" aria-hidden="true" id="siteprovisionerstepbase"></a><a href="#siteprovisionerstepbase" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SiteProvisionerStepBase</h4>
+<p>Fortunately, the ISiteProvisionerStep interface is completely implemented by the SiteProvisionerStepBase, which consequently allows us to simple override these values within our Step. We can see this in our Sample Step Deployment section. The SiteProvisionerStepBase is shown below</p>
+<pre><code class="hljs css language-c#"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">class</span> <span class="hljs-title">SiteProvisionerStepBase</span> : <span class="hljs-title">ISiteProvisionerStep</span>
+{
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-title">SiteProvisionerStepBase</span>(<span class="hljs-params"></span>)</span>;
+
+    <span class="hljs-keyword">public</span> SiteProvisionerProperties Properties { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">string</span> StepName { <span class="hljs-keyword">get</span>; }
+    <span class="hljs-keyword">public</span> List&lt;SiteProvisionerSettingsField&gt; UserSettings { <span class="hljs-keyword">get</span>; <span class="hljs-keyword">set</span>; }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> SiteProvisionerStepResponse <span class="hljs-title">Execute</span>(<span class="hljs-params"></span>)</span>;
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">string</span> <span class="hljs-title">GetProperty</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> name</span>)</span>;
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">string</span> <span class="hljs-title">GetSiteId</span>(<span class="hljs-params"></span>)</span>;
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">int</span> <span class="hljs-title">GetUnitOfWork</span>(<span class="hljs-params"></span>)</span>;
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">SetSiteId</span>(<span class="hljs-params"><span class="hljs-keyword">string</span> siteId</span>)</span>;
+    <span class="hljs-function"><span class="hljs-keyword">protected</span> <span class="hljs-keyword">void</span> <span class="hljs-title">SetUnitOfWork</span>(<span class="hljs-params"><span class="hljs-keyword">int</span> unit</span>)</span>;
+}
+</code></pre>
+<h3><a class="anchor" aria-hidden="true" id="example-step"></a><a href="#example-step" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Example Step</h3>
+<p>Below we have the AddPages.cs step. Allow us to ‘step’ through it for a deeper exploration the step architecture.</p>
+<pre><code class="hljs css language-c#"><span class="hljs-keyword">using</span> Akumina.SiteProvisioning.Common.Models;
+<span class="hljs-keyword">using</span> Akumina.SiteProvisioning.Core;
+<span class="hljs-keyword">using</span> Akumina.SiteProvisioning.Core.Interfaces;
+<span class="hljs-keyword">using</span> Akumina.SiteProvisioning.Core.Services;
+<span class="hljs-keyword">using</span> System;
+<span class="hljs-keyword">using</span> System.Collections.Generic;
+<span class="hljs-keyword">using</span> System.Linq;
+<span class="hljs-keyword">using</span> System.Text;
+<span class="hljs-keyword">using</span> System.Threading.Tasks;
+
+<span class="hljs-keyword">namespace</span> <span class="hljs-title">SiteProvisioning.SampleSite.Steps</span>
+{
+    <span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title">AddPages</span> : <span class="hljs-title">SiteProvisionerStepBase</span>, <span class="hljs-title">ISiteProvisionerStep</span>
+    {
+        <span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> <span class="hljs-keyword">string</span> StepName
+        {
+            <span class="hljs-keyword">get</span>
+            {
+                <span class="hljs-keyword">return</span> <span class="hljs-string">"Adding Pages"</span>;
+            }
+        }
+
+        <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">override</span> SiteProvisionerStepResponse <span class="hljs-title">Execute</span>(<span class="hljs-params"></span>)</span>
+        {
+            <span class="hljs-keyword">var</span> response = <span class="hljs-keyword">new</span> SiteProvisionerStepResponse();
+
+            PageService pageService = <span class="hljs-keyword">new</span> PageService();
+
+            <span class="hljs-keyword">try</span>
+            {
+                pageService.AssetDirectory = <span class="hljs-keyword">this</span>.Properties.AssetDirectory;
+                pageService.SiteId = <span class="hljs-keyword">this</span>.GetSiteId();
+
+                pageService.AddPages();
+
+                response.Message = <span class="hljs-string">"Pages Added"</span>;
+                response.Success = <span class="hljs-literal">true</span>;
+            }
+            <span class="hljs-keyword">catch</span> (Exception ex)
+            {
+                response.Message = ex.Message;
+                response.Success = <span class="hljs-literal">false</span>;
+            }
+           
+            <span class="hljs-keyword">return</span> response;
+        }
+    }
+}
+</code></pre>
+<p>We’ll cover this file in sections</p>
+<h4><a class="anchor" aria-hidden="true" id="public-override-string-stepname"></a><a href="#public-override-string-stepname" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>public override string StepName</h4>
+<p>We’re setting the StepName property here to Adding Pages. The StepName is the name of the step in the Deployment Manager App UI.</p>
+<h4><a class="anchor" aria-hidden="true" id="public-override-siteprovisionerstepresponse-execute"></a><a href="#public-override-siteprovisionerstepresponse-execute" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>public override SiteProvisionerStepResponse Execute()</h4>
+<p>Here is where we execute the work done by the step itself. Our backend code is executed in the PageService class, it is always good practice to export the work done by the step to another class.
+We return a SiteProvisionerStepResponse object from our Execute method. The response determines the success or fail message within the UI.</p>
+<h2><a class="anchor" aria-hidden="true" id="sitedefinitions-folder"></a><a href="#sitedefinitions-folder" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>SiteDefinitions Folder</h2>
+<p>The Site Definitions folder contains our AssetDirectory folders. Each AssetDirectory folder contains all assets needed for the deployment of the respective site (branding files, layouts, xml files). The name of our AssetDirectory is important as we will be referring to it within all of our deployment steps when referencing these files. The Site Definitions folder may have multiple Asset Directories.
+<img src="https://akumina.azureedge.net/wiki/training/images/site_creator/image6.png" alt="image 6"></p>
+<p>Within the AssetDirectory folder is the following framework.</p>
+<h3><a class="anchor" aria-hidden="true" id="branding"></a><a href="#branding" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Branding</h3>
+<p>The Branding folder contains all files that will be provisioned into the Style Library list upon deployment. The directories listed below will maintain their structure under the AssetDirectory folder within the Style Library when utilizing the OOB steps we provide with SampleSite deployer. Any files we want deployed to the Style Library should be placed within one of the listed directories.</p>
+<p><img src="https://akumina.azureedge.net/wiki/training/images/site_creator/image7.png" alt="image 7"></p>
+<h4><a class="anchor" aria-hidden="true" id="content"></a><a href="#content" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>content</h4>
+<p>Store your Mustache templates within the templates folder inside of the content directory</p>
+<h4><a class="anchor" aria-hidden="true" id="css"></a><a href="#css" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>css</h4>
+<p>Store custom css for the site definition within the CSS folder.</p>
+<h4><a class="anchor" aria-hidden="true" id="img"></a><a href="#img" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>img</h4>
+<p>Store images in the img folder</p>
+<h4><a class="anchor" aria-hidden="true" id="js"></a><a href="#js" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>js</h4>
+<p>Store custom js for the site definition within the js folder.</p>
+<h3><a class="anchor" aria-hidden="true" id="contenteditor"></a><a href="#contenteditor" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ContentEditor</h3>
+<p>The ContentEditor folder contains the ContentEditor.xml file, we need this for deploying our widgets. <strong>Do not edit or delete this file</strong>.</p>
+<h3><a class="anchor" aria-hidden="true" id="contenttypes"></a><a href="#contenttypes" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ContentTypes</h3>
+<p>The ContentTypes folder contains information that the Deployment Manager App uses to create content types on a site. This information is stored in an xml file called ContentTypes.xml. Edit this file to add addition content types to the site. We will discuss how to do so in the Custom Site Definition XML section.</p>
+<h3><a class="anchor" aria-hidden="true" id="listdefinitions"></a><a href="#listdefinitions" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ListDefinitions</h3>
+<p>The ListDefinitions folder contains information that the Deployment Manager App uses to create lists on a site. This information is stored in an xml file called Lists.xml. Edit this file to add additional lists to the site. We will discuss how to do so in the Custom Site Definition XML section</p>
+<h3><a class="anchor" aria-hidden="true" id="masterpages"></a><a href="#masterpages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MasterPages</h3>
+<p>The MasterPages folder will contain a single html file. The html file is deployed to the site’s Master Page Gallery, an associated .master file is generated, and the master page is set as the site master page with the AddMasterPageFiles.cs step. <strong>There can only be one html file in this directory for the masterpage deployment</strong>. This will need to be in the proper html master page format in order for the deployment to work, otherwise SharePoint will throw errors. Use the samplemaster.html in the SiteProvisioning.SampleSite as a model for a simple master page. For more info on creating Master Page html, see <a href="https://msdn.microsoft.com/en-us/library/office/jj822370.aspx">https://msdn.microsoft.com/en-us/library/office/jj822370.aspx</a>.</p>
+<h3><a class="anchor" aria-hidden="true" id="pagecontent"></a><a href="#pagecontent" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PageContent</h3>
+<p>The PageContent folder contains information that the Deployment Manager App will use to add content to the pages we create. This information is stored within an xml file called pages.xml. Edit this file to specify content markup you want on each page. We will discuss how to do so in the Custom Site Definition XML section.</p>
+<h3><a class="anchor" aria-hidden="true" id="pagelayouts"></a><a href="#pagelayouts" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>PageLayouts</h3>
+<p>The PageLayouts folder is where we store the page layouts we want deployed to our site’s Master Page Gallery by the AddPageLayouts.cs step. Inside of the file will be our page layouts (.aspx files) and an Elements.xml file, which informs the deployer of what layouts to deploy. When you add a page layout to this folder, you will need to edit the Elements.xml file accordingly. We will discuss how to do so in the Custom Site Definition XML section.</p>
+<h3><a class="anchor" aria-hidden="true" id="pages"></a><a href="#pages" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Pages</h3>
+<p>The Pages folder designates the pages that are deployed to the Pages Library of our site. This information is stored within an xml file called Elements.xml. Edit this file to add additional pages to the site. We will discuss how to do so in the Custom Site Definition XML section.</p>
+<h3><a class="anchor" aria-hidden="true" id="provisionerfiles"></a><a href="#provisionerfiles" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>ProvisionerFiles</h3>
+<p>Within the ProvisionerFiles folder we will store our provisioning javascript. Having a provisioning javascript file is required for the deployment view to function.
+<img src="https://akumina.azureedge.net/wiki/training/images/site_creator/image8.png" alt="image 8"></p>
+<p>The base provisioning javascript is shown below. This file can be modified to enhance the UI functionality of the deployment view</p>
+<pre><code class="hljs css language-javascript"><span class="hljs-keyword">var</span> SiteCreator = SiteCreator ? SiteCreator : {};
+
+<span class="hljs-keyword">if</span> ((<span class="hljs-keyword">typeof</span> SiteCreator.SampleSite) === <span class="hljs-string">'undefined'</span>) {
+    SiteCreator.SampleSite = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+        <span class="hljs-keyword">var</span> _cur = <span class="hljs-keyword">this</span>;
+
+        <span class="hljs-keyword">this</span>.Init = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">model</span>) </span>{
+            SiteCreator.Eventing.Subscribe(<span class="hljs-string">'/SiteCreator/DeployButtonclick/'</span>, _cur.OnDeploymentClick);
+            SiteCreator.Eventing.Subscribe(<span class="hljs-string">'/SiteCreator/SelectActionChange/'</span>, _cur.SelectActionChange);
+            SiteCreator.Eventing.Subscribe(<span class="hljs-string">'/SiteCreator/SiteChange/'</span>, _cur.OnSiteChange);
+            SiteCreator.Eventing.Subscribe(<span class="hljs-string">'/SiteCreator/GetFeatureName/'</span>, _cur.GetFeatureName);
+            _cur.className = model.className;
+            _cur.siteContainerId = model.siteContainerId;
+        };
+
+        <span class="hljs-keyword">this</span>.OnDeploymentClick = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">model</span>) </span>{
+            BaseDeployment(model, _cur.siteContainerId);
+        };
+
+        <span class="hljs-keyword">this</span>.SelectActionChange = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">model</span>) </span>{
+            <span class="hljs-keyword">if</span> (model.siteContainerId == _cur.siteContainerId) {
+                <span class="hljs-comment">//Detect Add mode</span>
+                <span class="hljs-keyword">if</span> ($(<span class="hljs-string">'input[type=radio][name=select-an-action][value=CreateNewInstallation]'</span>).is(<span class="hljs-string">':checked'</span>)) {
+                }<span class="hljs-comment">//Detect Update mode</span>
+                <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> ($(<span class="hljs-string">'input[type=radio][name=select-an-action][value=UpdateConfigurationSettings]'</span>).is(<span class="hljs-string">':checked'</span>)) {
+                }
+            }
+        };
+
+        <span class="hljs-keyword">this</span>.OnSiteChange = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">model</span>) </span>{
+            <span class="hljs-keyword">if</span> (model.siteContainerId == _cur.siteContainerId) {
+                $(<span class="hljs-string">"#selectActionDiv"</span>).show();
+                $(<span class="hljs-string">"#updateConfigOption"</span>).hide();
+            }
+        };
+
+        <span class="hljs-keyword">this</span>.GetFeatureName = <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params">model</span>) </span>{
+            BaseGetFeatureName(model, _cur.siteContainerId);
+        };
+    }
+};
+</code></pre>
+<p><strong>Note:</strong> You must replace SiteCreator.SampleSite with the ClassName property you defined in your C# class that inherits the SiteProvisionerSiteBase class. Otherwise you will get errors.</p>
+<h3><a class="anchor" aria-hidden="true" id="uploadfiles"></a><a href="#uploadfiles" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>UploadFiles</h3>
+<p>The UploadFiles folder contains all files that we want uploaded to SharePoint file libraries within our site via the UploadFiles.cs step. We can designate the library that we want our files uploaded to by the name of the subdirectory under our UploadFiles folder. In the example below, we are uploading files into the Documents, Images, Images_AK, and Site Collection Images libraries.</p>
+<p><img src="https://akumina.azureedge.net/wiki/training/images/site_creator/image9.png" alt="image 9"></p>
+<p>The UploadFiles.cs step treats these subdirectories as the libraries themselves and copies the file structure underneath into the corresponding SharePoint library. For example, if we wanted to upload the Saturday.docx into the Documents library and the Tuesday.docx into a folder called Weekdays inside of the document library, we would arrange our file structure as shown below</p>
+<p><img src="https://akumina.azureedge.net/wiki/training/images/site_creator/image10.png" alt="image 10"></p>
+<h2><a class="anchor" aria-hidden="true" id="references"></a><a href="#references" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>References</h2>
+<p>To learn how to leverage the Deployment Manager SDK see the following articles:</p>
+<ul>
+<li><a href="https://github.com/akumina/AkuminaDev/wiki/Deployment-Manager:-Overview">Overview</a></li>
+<li><a href="https://github.com/akumina/AkuminaDev/wiki/Deployment-Manager:-Adding-A-Custom-Site-Definition">Adding A Custom Site Definition</a></li>
+<li><a href="https://github.com/akumina/AkuminaDev/wiki/Deployment-Manager:-Core-Step-Classes">Core Step Classes</a></li>
+<li><a href="https://github.com/akumina/AkuminaDev/wiki/Deployment-Manager:-Custom-Site-Definition-XML">Custom Site Definition XML</a></li>
+<li><a href="https://github.com/akumina/AkuminaDev/wiki/Deployment-Manager:-Custom-Subsite-Definitions">Custom Subsite Definitions</a></li>
+<li><a href="https://github.com/akumina/AkuminaDev/wiki/Deployment-Manager:-Sample-Step-Code">Sample Step Code</a></li>
+<li><a href="https://github.com/akumina/AkuminaDev/wiki/Deployment-Manager:-Supported-Tokens">Supported Tokens</a></li>
+</ul>
+</span></div></article></div><div class="docs-prevnext"></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#the-c-class-inheriting-the-siteprovisionersitebase-class">The C# class inheriting the SiteProvisionerSiteBase class</a><ul class="toc-headings"><li><a href="#siteprovisionersitebase">SiteProvisionerSiteBase</a></li><li><a href="#isiteprovisionersite">ISiteProvisionerSite</a></li></ul></li><li><a href="#c-classes-that-inherit-the-isiteprovisioner-step-interface">C# classes that inherit the ISiteProvisioner Step interface</a><ul class="toc-headings"><li><a href="#overview">Overview</a></li><li><a href="#example-step">Example Step</a></li></ul></li><li><a href="#sitedefinitions-folder">SiteDefinitions Folder</a><ul class="toc-headings"><li><a href="#branding">Branding</a></li><li><a href="#contenteditor">ContentEditor</a></li><li><a href="#contenttypes">ContentTypes</a></li><li><a href="#listdefinitions">ListDefinitions</a></li><li><a href="#masterpages">MasterPages</a></li><li><a href="#pagecontent">PageContent</a></li><li><a href="#pagelayouts">PageLayouts</a></li><li><a href="#pages">Pages</a></li><li><a href="#provisionerfiles">ProvisionerFiles</a></li><li><a href="#uploadfiles">UploadFiles</a></li></ul></li><li><a href="#references">References</a></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="sitemap"><a href="/" class="nav-home"><img src="/img/ak-logo2.png" alt="Akumina Developer Documentation" width="66" height="58"/></a><div><h5>Docs</h5><a href="/docs/en/ak-frame45.html">Akumina Framework 4.5</a><a href="/docs/en/ak-widget-builder.html">Akumina Widget Builder</a><a href="/docs/en/doc3.html">Typescript API Reference</a></div><div><h5>Community</h5></div><div><h5>More</h5><a href="https://github.com/akumina/">GitHub</a><a class="github-button" data-icon="octicon-star" data-count-href="/AkuminaDev/stargazers" data-show-count="true" data-count-aria-label="# stargazers on GitHub" aria-label="Star this project on GitHub">Star</a></div></section><section class="copyright">Copyright © 2019 Akumina</section></footer></div></body></html>
